@@ -1,0 +1,19 @@
+[package]
+name = "fem_toolkit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "fem_toolkit"
+crate-type = ["cdylib"]
+
+
+[dependencies]
+ndarray = "0.15.6"
+numpy = "0.16.2"
+
+[dependencies.pyo3]
+version = "0.16.4"
+features = ["extension-module"]
